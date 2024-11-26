@@ -121,3 +121,61 @@ body {
     }
   }
   
+
+  /*Chatbot styles*/
+  #chatbot-button {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    height: 50px;
+    width: 50px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+    font-size: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: pop 1s ease-in-out infinite alternate;
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+/* Chatbot iframe styles */
+#chatbot-iframe-container {
+    position: fixed;
+    bottom: 70px;
+    left: 10px;
+    height: 0;
+    width: 0;
+    overflow: hidden; /* Ensure the content is hidden when minimized */
+    transition: height 0.3s ease-in-out, width 0.3s ease-in-out; /* Explicitly define transitions for height and width */
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px; /* Add rounded corners */
+    border: 2px solid #007bff; /* Add a border */
+}
+
+#chatbot-iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px; /* Add rounded corners */
+}
+
+/* Expanded iframe styles */
+#chatbot-iframe-container.expanded {
+    height: 500px !important;
+    width: 400px !important; /* Adjust width if needed */
+}

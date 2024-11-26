@@ -1,76 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IT Solutions | Servicios Informáticos</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <div class="container">
-      <h1>IT Solutions</h1>
-      <nav>
-        <ul>
-          <li><a href="#services">Servicios</a></li>
-          <li><a href="#about">Nosotros</a></li>
-          <li><a href="#contact">Contacto</a></li>
-        </ul>
-      </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IT Solutions | Servicios Informáticos</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="chatbot-button">💬</div>
+    <!-- Chatbot iframe container -->
+    <div id="chatbot-iframe-container">
+      <iframe
+        id="chatbot-iframe"
+        src="https://landing-test-black.vercel.app"
+      ></iframe>
     </div>
-  </header>
 
-  <section class="hero">
-    <h2>Soluciones Tecnológicas a tu Medida</h2>
-    <p>Ofrecemos servicios de desarrollo web, soporte técnico, ciberseguridad y mucho más.</p>
-    <button onclick="scrollToSection('services')">Conoce más</button>
-  </section>
-
-  <section id="services" class="services">
-    <h3>Nuestros Servicios</h3>
-    <div class="service-grid">
-      <div class="service-card">
-        <h4>Desarrollo Web</h4>
-        <p>Creación de sitios web adaptativos y aplicaciones modernas con tecnologías avanzadas como React y Node.js.</p>
+    <header>
+      <div class="container">
+        <h1>IT Solutions</h1>
+        <nav>
+          <ul>
+            <li><a href="#services">Servicios</a></li>
+            <li><a href="#about">Nosotros</a></li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
+        </nav>
       </div>
-      <div class="service-card">
-        <h4>Soporte Técnico</h4>
-        <p>Asistencia profesional para solucionar problemas de hardware y software, garantizando un funcionamiento óptimo.</p>
-      </div>
-      <div class="service-card">
-        <h4>Ciberseguridad</h4>
-        <p>Implementamos sistemas robustos para proteger tus datos y evitar ciberataques, con análisis de vulnerabilidades.</p>
-      </div>
-      <div class="service-card">
-        <h4>Consultoría IT</h4>
-        <p>Te ayudamos a planificar y ejecutar proyectos tecnológicos para optimizar recursos y alcanzar tus objetivos.</p>
-      </div>
-      <div class="service-card">
-        <h4>Infraestructura en la Nube</h4>
-        <p>Migramos y gestionamos tus datos en la nube con proveedores líderes como AWS, Google Cloud y Azure.</p>
-      </div>
-    </div>
-  </section>
+    </header>
 
-  <section id="about" class="about">
-    <h3>Sobre Nosotros</h3>
-    <p>Somos un equipo de expertos apasionados por la tecnología, comprometidos con ofrecer soluciones innovadoras para tu negocio.</p>
-  </section>
+    <section class="hero">
+      <h2>Soluciones Tecnológicas a tu Medida</h2>
+      <p>
+        Ofrecemos servicios de desarrollo web, soporte técnico, ciberseguridad y
+        mucho más.
+      </p>
+      <button onclick="scrollToSection('services')">Conoce más</button>
+    </section>
 
-  <section id="contact" class="contact">
-    <h3>Contáctanos</h3>
-    <form id="contact-form">
-      <input type="text" id="name" placeholder="Tu Nombre" required>
-      <input type="email" id="email" placeholder="Tu Correo" required>
-      <textarea id="message" placeholder="Tu Mensaje" required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
+    <section id="services" class="services">
+      <h3>Nuestros Servicios</h3>
+      <div class="service-grid">
+        <div class="service-card">
+          <h4>Desarrollo Web</h4>
+          <p>
+            Creación de sitios web adaptativos y aplicaciones modernas con
+            tecnologías avanzadas como React y Node.js.
+          </p>
+        </div>
+        <div class="service-card">
+          <h4>Soporte Técnico</h4>
+          <p>
+            Asistencia profesional para solucionar problemas de hardware y
+            software, garantizando un funcionamiento óptimo.
+          </p>
+        </div>
+        <div class="service-card">
+          <h4>Ciberseguridad</h4>
+          <p>
+            Implementamos sistemas robustos para proteger tus datos y evitar
+            ciberataques, con análisis de vulnerabilidades.
+          </p>
+        </div>
+        <div class="service-card">
+          <h4>Consultoría IT</h4>
+          <p>
+            Te ayudamos a planificar y ejecutar proyectos tecnológicos para
+            optimizar recursos y alcanzar tus objetivos.
+          </p>
+        </div>
+        <div class="service-card">
+          <h4>Infraestructura en la Nube</h4>
+          <p>
+            Migramos y gestionamos tus datos en la nube con proveedores líderes
+            como AWS, Google Cloud y Azure.
+          </p>
+        </div>
+      </div>
+    </section>
 
-  <footer>
-    <p>&copy; 2024 IT Solutions. Todos los derechos reservados.</p>
-  </footer>
+    <section id="about" class="about">
+      <h3>Sobre Nosotros</h3>
+      <p>
+        Somos un equipo de expertos apasionados por la tecnología, comprometidos
+        con ofrecer soluciones innovadoras para tu negocio.
+      </p>
+    </section>
 
-  <script src="script.js"></script>
-</body>
+    <section id="contact" class="contact">
+      <h3>Contáctanos</h3>
+      <form id="contact-form">
+        <input type="text" id="name" placeholder="Tu Nombre" required />
+        <input type="email" id="email" placeholder="Tu Correo" required />
+        <textarea id="message" placeholder="Tu Mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 IT Solutions. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+      // Get the chatbot button and iframe container elements
+      const chatbotButton = document.getElementById('chatbot-button');
+      const chatbotIframeContainer = document.getElementById('chatbot-iframe-container');
+
+      // Add a click event listener to the chatbot button
+      chatbotButton.addEventListener('click', () => {
+          // Toggle the expanded class on the iframe container
+          console.log('Chatbot button clicked'); // Debugging log
+          chatbotIframeContainer.classList.toggle('expanded');
+          console.log('Iframe container classes:', chatbotIframeContainer.className); // Debugging log
+      });
+
+      // Stop the animation after 10 seconds or 10 iterations
+      setTimeout(() => {
+          chatbotButton.style.animation = 'none';
+      }, 10000); // 10 seconds (10 iterations at 1s each)
+  </script>
+    <script src="script.js"></script>
+  </body>
 </html>
