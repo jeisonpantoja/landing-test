@@ -1,0 +1,123 @@
+/* General */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 1rem;
+  }
+  
+  /* Header */
+  header {
+    background: #007bff;
+    color: #fff;
+    padding: 1rem 0;
+  }
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    background: #f4f4f4;
+    padding: 2rem 1rem;
+  }
+  .hero h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .hero button {
+    padding: 0.5rem 1rem;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Services Section */
+  .services {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  .services .service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+  .services .service-card {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .services .service-card h4 {
+    margin-top: 0;
+    color: #007bff;
+  }
+  
+  /* About Section */
+  .about {
+    background: #f9f9f9;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  /* Contact Section */
+  .contact {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  .contact form input, 
+  .contact form textarea, 
+  .contact form button {
+    width: 50%;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+  }
+  .contact form button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Footer */
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header .container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    header nav ul {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .hero h2 {
+      font-size: 1.5rem;
+    }
+  }
+  
